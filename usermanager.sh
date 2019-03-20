@@ -1,7 +1,7 @@
 #! /bit/bash
 clear
 function Menu(){
-echo -e "1. Create user \n2. Delete user\n3. \n 0.Exit"
+echo -e  "\e\033[5;33m\t1. Create user\n\t2. Delete user\n\t3. Edit user\n\t0. Exit\e[0m"
 read choice
 }
 
@@ -78,7 +78,6 @@ read name
 echo "Enter new UID"
 read newUid
 usermode -u $newUid $name
-fi
 elif (( $editUser == 3 )) 
 then 
 echo "Enter nameUser"
@@ -86,7 +85,6 @@ read Userr
 echo "Enter new GID"
 read newGID
 usermode -g $newGID $Userr
-if
 elif (( $editUser == 4 )) 
 then
 echo "Enter naUser"
