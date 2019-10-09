@@ -85,7 +85,8 @@ read Userr
 echo "Enter new GID"
 read newGID
 usermode -g $newGID $Userr
-elif (( $editUser == 4 )) 
+elif (( $editUser == 4 ))
+//jenkins 
 then
 echo "Enter naUser"
 read userpass
